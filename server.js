@@ -6,6 +6,10 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, "public")));
 
+app.get("/healthz", (_req, res) => {
+  res.status(200).send("ok");
+});
+
 app.get("/api/questions", (_req, res) => {
   const breeds = [
     {
