@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cattle Breed Quiz</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>🐄 Cattle Breed Quiz</h1>
+      <p class="subtitle">Guess the breed from the clue.</p>
+
+      <section id="quiz-card" class="card">
+        <p id="progress"></p>
+        <h2 id="hint"></h2>
+        <div id="options" class="options"></div>
+        <p id="feedback" class="feedback"></p>
+      </section>
+
+      <section id="result-card" class="card hidden">
+        <h2>Quiz complete!</h2>
+        <p id="score"></p>
+        <button id="restart">Play again</button>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
